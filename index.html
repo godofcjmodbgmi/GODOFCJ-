@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GODOFCJ — Official Site</title>
     <style>
+        * { box-sizing: border-box; }
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0d0d0d;
-            color: white;
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #ff4e50, #fc913a, #f9d423, #e1f55c);
+            background-size: 400% 400%;
+            animation: gradientMove 12s ease infinite;
+            color: #fff;
             text-align: center;
         }
-        header {
-            padding: 30px;
-            background: #111;
-            font-size: 30px;
-            font-weight: bold;
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
+
+        header {
+            padding: 35px;
+            background: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(5px);
+            font-size: 32px;
+            font-weight: 800;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
         .section {
             margin: 30px auto;
             width: 90%;
-            max-width: 500px;
-            background: #1a1a1a;
-            padding: 20px;
-            border-radius: 15px;
+            max-width: 520px;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(6px);
         }
-        a.button {
+
+        .button {
             display: block;
             padding: 15px;
             margin-top: 15px;
-            background: #222;
-            border-radius: 10px;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            border-radius: 12px;
             font-size: 18px;
             text-decoration: none;
             color: white;
             font-weight: bold;
+            transition: 0.3s;
         }
-        a.telegram { color: #1E90FF; }
-        a.instagram { color: #ff2fb0; }
-        a.whatsapp { color: #25D366; }
 
-        .lock {
-            margin-right: 8px;
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        .telegram { background: linear-gradient(135deg, #1E90FF, #00B2FF); }
+        .instagram { background: linear-gradient(135deg, #ff2fb0, #ff6b81); }
+        .whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); }
+
+        .footer-email {
+            font-size: 15px;
+            margin-top: 10px;
+            color: #fff;
         }
     </style>
 </head>
@@ -53,28 +78,26 @@
 <div class="section">
     <h2>Downloads</h2>
 
-    <a class="button" href="https://www.instagram.com/reel/DR954meku_E/?igsh=NjIwdXB6b3dpOWt5" target="_blank">Download Mod</a>
+    <a class="button" href="https://t.me/+dEzFE3A7G3RhZjk1" target="_blank">Download Mod</a>
 
-    <a class="button" href="https://www.instagram.com/reel/DR954meku_E/?igsh=NjIwdXB6b3dpOWt5" target="_blank">Download Loader</a>
+    <a class="button" href="https://t.me/+dEzFE3A7G3RhZjk1" target="_blank">Download Loader</a>
 
-    <a class="button" href="https://t.me/+fiDzC_S9Cjs2YmJl" target="_blank">
-        🔒 Get Free key
-    </a>
+    <a class="button" href="https://t.me/+dEzFE3A7G3RhZjk1" target="_blank">🔒 Get Free Key</a>
 </div>
 
 <div class="section">
     <h2>Social Media</h2>
 
-    <a class="button telegram" href="https://t.me/GODOFCJOWNER" target="_blank">Telegram🐯</a>
+    <a class="button telegram" href="https://t.me/+dEzFE3A7G3RhZjk1" target="_blank">📩 Telegram</a>
 
-    <a class="button instagram" href="https://instagram.com/GOD_OF_98" target="_blank">Instagram🐱</a>
+    <a class="button instagram" href="https://www.instagram.com/invites/contact/?igsh=1dg5gkeo6xra6&utm_content=ns088kd" target="_blank">📷 Instagram</a>
 
-    <a class="button whatsapp" href="https://whatsapp.com/channel/0029VbC7Dhw6BIElVgeSsF1m" target="_blank">WhatsApp🐶</a>
+    <a class="button whatsapp" href="https://whatsapp.com/channel/0029VbC7Dhw6BIElVgeSsF1m" target="_blank">📞 WhatsApp</a>
 </div>
 
 <div class="section">
     <h2>Contact Support</h2>
-    <p>Email: <b>chandrajyotichakma986@gmail.com</b></p>
+    <p class="footer-email">Email: <b>chandrajyotichakma986@gmail.com</b></p>
 </div>
 
 </body>
